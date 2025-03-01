@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-50: #fffaf0;
+  --color-brand-100: #fff5e0;
+  --color-brand-200: #ffeabd;
+  --color-brand-300: #ffdf99;
+  --color-brand-400: #ffd270;
+  --color-brand-500: #ffc137;
+  --color-brand-600: #f5a700;
+  --color-brand-700: #db9600;
+  --color-brand-800: #b37a00;
+  --color-brand-900: #855b00;
+  --color-brand-950: #5c3f00;
+
+  --color-secondary-50: #fef2ec;
+  --color-secondary-100: #fde5d9;
+  --color-secondary-200: #f9c5a9;
+  --color-secondary-300: #f69e6f;
+  --color-secondary-400: #f06114;
+  --color-secondary-500: #8d3809;
+  --color-secondary-600: #813308;
+  --color-secondary-700: #6e2b07;
+  --color-secondary-800: #562206;
+  --color-secondary-900: #431a04;
+  --color-secondary-950: #2b1103;
+
+  --color-whiteBrand-50: #fdfdfc;
+  --color-whiteBrand-100: #f8f8f7;
+  --color-whiteBrand-200: #f3f3f1;
+  --color-whiteBrand-300: #ecebe9;
+  --color-whiteBrand-400: #e5e4e1;
+  --color-whiteBrand-500: #dfddd9;
+  --color-whiteBrand-600: #ccc9c2;
+  --color-whiteBrand-700: #b4b0a6;
+  --color-whiteBrand-800: #989285;
+  --color-whiteBrand-900: #6f695d;
+  --color-whiteBrand-950: #4e4941;
+
+  --color-darkBrand-50: #f2f2f2;
+  --color-darkBrand-100: #e8e8e8;
+  --color-darkBrand-200: #cccccc;
+  --color-darkBrand-300: #ababab;
+  --color-darkBrand-400: #7d7d7d;
+  --color-darkBrand-500: #070707;
+  --color-darkBrand-600: #000000;
+  --color-darkBrand-700: #000000;
+  --color-darkBrand-800: #000000;
+  --color-darkBrand-900: #000000;
+  --color-darkBrand-950: #000000;
+
+  --font-Narrow: 'PT Sans Narrow', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-Narrow);
+  font-weight: 400;
+}
