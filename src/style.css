@@ -51,9 +51,21 @@
   --color-darkBrand-950: #000000;
 
   --font-Narrow: 'PT Sans Narrow', sans-serif;
+  --animate-rotate: rotating 20s linear infinite;
+
+  @keyframes rotating {
+    from {
+      transform: perpective(1000px) rotateX(-15deg) rotateY(0deg);
+    }
+
+    to {
+      transform: perpective(1000px) rotateX(-15deg) rotateY(360deg);
+    }
+
+  }
 }
 
-@layer utilities{
+@layer utilities {
   .max-container {
     max-width: 1400px;
     margin-left: auto;
@@ -62,7 +74,15 @@
     padding-right: 1rem;
   }
 }
-*, *::before, *::after {
-  box-sizing: border-box;
-  font-family: var(--font-Narrow);
+
+@layer base {
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-Narrow);
+  }
 }
