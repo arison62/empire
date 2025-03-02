@@ -13,9 +13,104 @@
   </head>
 
   <body>
-    <div id="app">
-      <h1 class="text-3xl font-bold text-red-500">Empire</h1>
-    </div>
+    <header>
+      <div 
+        class="fixed w-full top-0 flex justify-between 
+          items-center bg-gradient-to-r
+        from-brand-600 via-secondary-400
+         to-red-600 py-1 px-4 text-white z-50">
+        <div class="justify-baseline gap-3 hidden md:flex">
+          Suivez-nous sur :
+          <a href="https://www.facebook.com/empirebykrole" target="_blank"
+            >
+            
+            <img 
+              src="/facebook.svg" alt="Facebook" 
+              class="w-4.5 fill-green-500" 
+            /></a
+          >
+          <a href="https://www.tiktok.com/@empirebykrole" target="_blank"
+            ><img src="/tiktok.svg" alt="Tiktok" class="w-5" /></a
+          >
+        </div>
+        <div class="flex gap-8 w-full 
+          justify-between items-center
+          md:justify-start md:w-auto">
+          <div class="flex justify-baseline gap-2">
+            <img 
+              class="w-5"
+              src="/location-white.svg" alt="Localisation" />
+              <span>Maroua, Cameroun</span>
+          </div>
+          <div class="flex justify-baseline gap-2">
+            <img 
+              class="w-5"
+              src="/phone-white.svg" alt="Téléphone" />
+              <span>+237 693 71 98 77</span>
+          </div>
+        </div>
+      </div>
+      <div class="border-b border-gray-200 mt-10 pb-4">
+        <img 
+          src="/logo.svg" 
+          alt="Logo Empire by K'role" 
+          class="w-20 mx-auto mt-4"
+        />
+      </div>
+      <nav class="mt-4">
+        <div class="max-container flex justify-between items-center">
+          <ul class="flex gap-4 text-darkBrand-500/70 text-xl">
+            <li><a href="/index.html">Accueil</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/appropos.html">A propos</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+          </ul>
+          <ul class="flex gap-4">
+            <li>
+              <a href="https://wa.me/237693719877" target="_blank"
+                class="flex gap-2 items-center px-2 py-1
+                bg-green-500 text-white text-xl"
+              >
+                <img 
+                  src="/whatsapp.svg" 
+                  alt="WhatsApp" 
+                  class="w-5" />
+                  WhatsApp
+              </a>
+      
+            </li>
+               
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="max-container mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="flex flex-col items-start">
+            <h1 class="text-3xl md:text-5xl font-bold">
+              Bienvenue chez <span class="text-brand-500 uppercase font-extrabold">Empire by K'role</span>
+            </h1>
+            <p class="text-lg text-gray-500 mt-2">
+              Découvrez un univers où coiffure, maquillage, soins corporels et spa s'allient 
+    pour vous offrir une expérience unique. Laissez-nous prendre soin de vous.
+            </p>
+            <a href="/services.html"
+              class="mt-4 px-4 py-2 bg-brand-500 text-white text-lg
+              hover:bg-brand-600 align-bottom"
+            >
+              Découvrir nos services
+            </a>
+          </div>
+           <div>
+            <img 
+              src="/hero.jpg" 
+              alt="Salon de beauté Empire by K'role" 
+              class="w-au h-90 object-cover"
+            />
+           </div>
+        </div>
+      </div>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

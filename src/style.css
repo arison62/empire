@@ -53,10 +53,16 @@
   --font-Narrow: 'PT Sans Narrow', sans-serif;
 }
 
+@layer utilities{
+  .max-container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
 *, *::before, *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-family: var(--font-Narrow);
-  font-weight: 400;
 }
