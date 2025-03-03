@@ -43,41 +43,51 @@
     </div>
     <nav class="mt-4">
       <div class="max-container flex justify-between items-center">
-        <div class="relative sm:hidden">
-          <button id="btn-menu">
-            <img src="/close.svg" alt="Close" class="w-6 hidden group-[.is-open]:block" />
-            <img src="/menu.svg" alt="Menu" class="w-6 group-[.is-open]:hidden" />
+        <!-- Menu mobile -->
+        <div class="relative sm:hidden group">
+          <button id="btn-menu-open" class="z-50">
+            <img src="/menu.svg" alt="Close" class="w-6 block group-[.is-open]:hidden transition-opacity" />
           </button>
-          <div class="absolute top-0 left-0 w-full h-full bg-white shadow-md hidden">
-            <ul class="flex flex-col gap-4 p-4">
-              <li><a href="/index.html">Accueil</a></li>
-              <li><a href="/services.html">Services</a></li>
-              <li><a href="/appropos.html">A propos</a></li>
-              <li><a href="/contact.html">Contact</a></li>
+          
+          <!-- Drawer animée -->
+          <div class="fixed inset-0 h-screen w-full max-w-2/3 bg-white/90 backdrop-blur-sm
+              transform -translate-x-full transition-all duration-300 ease-in-out
+              group-[.is-open]:translate-x-0
+              flex flex-col pt-20 px-4
+              shadow-2xl z-40">
+            <button id="btn-menu-close" class="absolute top-12 right-4">
+              <img src="/close.svg" alt="Close" class="w-6" />
+            </button>
+            <ul class="flex flex-col gap-6 text-xl">
+              <li><a href="/index.html" class="hover:text-brand-500 transition-colors">Accueil</a></li>
+              <li><a href="/services.html" class="hover:text-brand-500 transition-colors">Services</a></li>
+              <li><a href="/appropos.html" class="hover:text-brand-500 transition-colors">A propos</a></li>
+              <li><a href="/contact.html" class="hover:text-brand-500 transition-colors">Contact</a></li>
             </ul>
           </div>
-
         </div>
-        <ul class="gap-4
-           text-darkBrand-500/70 
-           text-xl hidden sm:flex">
+    
+        <!-- Menu desktop (inchangé) -->
+        <ul class="gap-4 text-darkBrand-500/70 text-xl hidden sm:flex">
           <li><a href="/index.html">Accueil</a></li>
           <li><a href="/services.html">Services</a></li>
           <li><a href="/appropos.html">A propos</a></li>
           <li><a href="/contact.html">Contact</a></li>
         </ul>
+        
+        <!-- Bouton WhatsApp (inchangé) -->
         <ul class="flex gap-4">
           <li>
             <a href="https://wa.me/237693719877" target="_blank" class="flex gap-2 items-center px-2 py-1
-                bg-green-500 text-white text-xl">
+               bg-green-500 text-white text-xl hover:bg-green-600 transition-colors">
               <img src="/whatsapp.svg" alt="WhatsApp" class="w-5" />
               WhatsApp
             </a>
-
           </li>
-
+        </ul>
       </div>
     </nav>
+    
   </header>
   <main>
     <div class="max-container mt-10">
@@ -187,7 +197,7 @@
       </div>
       <div>
         <h2 class="text-whiteBrand-500 text-2xl">Services</h2>
-        <ul class="flex flex-col gap-2 text-whiteBrand-500">
+        <ul class="flex flex-col gap-2 text-whiteBrand-500 ">
           <li><a href="/services.html#coiffure">Coiffure</a></li>
           <li><a href="/services.html#onglerie">Onglerie</a></li>
           <li><a href="/services.html#jacouzi">Jacouzi</a></li>
