@@ -51,17 +51,16 @@
   --color-darkBrand-950: #000000;
 
   --font-Narrow: 'PT Sans Narrow', sans-serif;
-  --animate-rotate: rotating 20s linear infinite;
+  --animate-infinite-scroll: infinite-scroll 45s linear infinite;
 
-  @keyframes rotating {
-    from {
-      transform: perpective(1000px) rotateX(-15deg) rotateY(0deg);
+  @keyframes infinite-scroll {
+    0% {
+      transform: translateX(0);
     }
-
-    to {
-      transform: perpective(1000px) rotateX(-15deg) rotateY(360deg);
+    100% {
+      transform: translateX(calc(-100% - 2rem));
     }
-
+  
   }
 }
 
@@ -72,6 +71,14 @@
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .srcoll {
+    animation: scroll 20s linear infinite;
+  }
+
+  .pause {
+    animation-play-state: paused;
   }
 }
 

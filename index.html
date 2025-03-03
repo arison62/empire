@@ -1,144 +1,220 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/styles.css" />
-    <title>EMPIRE BY K'ROLE</title>
-    <meta
-      name="description"
-      content="Votre salon de beauté et spa propose des services de coiffure, maquillage, soins corporels, onglerie et spa relaxants. Découvrez des prestations professionnelles à partir de 1000 FCFA. Réservez en ligne pour une expérience de bien-être unique."
-    />
-  </head>
 
-  <body>
-    <header>
-      <div 
-        class="fixed w-full top-0 flex justify-between 
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/styles.css" />
+  <title>EMPIRE BY K'ROLE</title>
+  <meta name="description"
+    content="Votre salon de beauté et spa propose des services de coiffure, maquillage, soins corporels, onglerie et spa relaxants. Découvrez des prestations professionnelles à partir de 1000 FCFA. Réservez en ligne pour une expérience de bien-être unique." />
+</head>
+
+<body>
+  <header>
+    <div class="fixed w-full top-0 flex justify-between 
           items-center bg-gradient-to-r
         from-brand-600 via-secondary-400
          to-red-600 py-1 px-4 text-white z-50">
-        <div class="justify-baseline gap-3 hidden md:flex">
-          Suivez-nous sur :
-          <a href="https://www.facebook.com/empirebykrole" target="_blank"
-            >
-            
-            <img 
-              src="/facebook.svg" alt="Facebook" 
-              class="w-4.5 fill-green-500" 
-            /></a
-          >
-          <a href="https://www.tiktok.com/@empirebykrole" target="_blank"
-            ><img src="/tiktok.svg" alt="Tiktok" class="w-5" /></a
-          >
-        </div>
-        <div class="flex gap-8 w-full 
+      <div class="justify-baseline gap-3 hidden md:flex">
+        Suivez-nous sur :
+        <a href="https://www.facebook.com/empirebykrole" target="_blank">
+
+          <img src="/facebook.svg" alt="Facebook" class="w-4.5 fill-green-500" /></a>
+        <a href="https://www.tiktok.com/@empirebykrole" target="_blank"><img src="/tiktok.svg" alt="Tiktok"
+            class="w-5" /></a>
+      </div>
+      <div class="flex gap-8 w-full 
           justify-between items-center
           md:justify-start md:w-auto">
-          <div class="flex justify-baseline gap-2">
-            <img 
-              class="w-5"
-              src="/location-white.svg" alt="Localisation" />
-              <span>Maroua, Cameroun</span>
-          </div>
-          <div class="flex justify-baseline gap-2">
-            <img 
-              class="w-5"
-              src="/phone-white.svg" alt="Téléphone" />
-              <span>+237 693 71 98 77</span>
-          </div>
+        <div class="flex justify-baseline gap-2">
+          <img class="w-5" src="/location-white.svg" alt="Localisation" />
+          <span>Maroua, Cameroun</span>
+        </div>
+        <div class="flex justify-baseline gap-2">
+          <img class="w-5" src="/phone-white.svg" alt="Téléphone" />
+          <span>+237 693 71 98 77</span>
         </div>
       </div>
-      <div class="border-b border-gray-200 mt-10 pb-4">
-        <img 
-          src="/logo.svg" 
-          alt="Logo Empire by K'role" 
-          class="w-20 mx-auto mt-4"
-        />
-      </div>
-      <nav class="mt-4">
-        <div class="max-container flex justify-between items-center">
-          <ul class="flex gap-4 text-darkBrand-500/70 text-xl">
-            <li><a href="/index.html">Accueil</a></li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="/appropos.html">A propos</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-          </ul>
-          <ul class="flex gap-4">
-            <li>
-              <a href="https://wa.me/237693719877" target="_blank"
-                class="flex gap-2 items-center px-2 py-1
-                bg-green-500 text-white text-xl"
-              >
-                <img 
-                  src="/whatsapp.svg" 
-                  alt="WhatsApp" 
-                  class="w-5" />
-                  WhatsApp
-              </a>
-      
-            </li>
-               
+    </div>
+    <div class="border-b border-gray-200 mt-10 pb-4">
+      <img src="/logo.svg" alt="Logo Empire by K'role" class="w-20 mx-auto mt-4" />
+    </div>
+    <nav class="mt-4">
+      <div class="max-container flex justify-between items-center">
+        <div class="relative sm:hidden">
+          <button id="btn-menu">
+            <img src="/close.svg" alt="Close" class="w-6 hidden group-[.is-open]:block" />
+            <img src="/menu.svg" alt="Menu" class="w-6 group-[.is-open]:hidden" />
+          </button>
+          <div class="absolute top-0 left-0 w-full h-full bg-white shadow-md hidden">
+            <ul class="flex flex-col gap-4 p-4">
+              <li><a href="/index.html">Accueil</a></li>
+              <li><a href="/services.html">Services</a></li>
+              <li><a href="/appropos.html">A propos</a></li>
+              <li><a href="/contact.html">Contact</a></li>
+            </ul>
+          </div>
+
         </div>
-      </nav>
-    </header>
-    <main>
-      <div class="max-container mt-10">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="flex flex-col items-start">
-            <h1 class="text-3xl md:text-5xl font-bold text-secondary-900">
-              Bienvenue chez <span class="text-brand-500 uppercase font-extrabold">Empire by K'role</span>
-            </h1>
-            <p class="text-lg text-gray-500 mt-2">
-              Découvrez un univers où coiffure, maquillage, soins corporels et spa s'allient 
-    pour vous offrir une expérience unique. Laissez-nous prendre soin de vous.
-            </p>
-            <a href="/services.html"
-              class="mt-4 px-4 py-2 bg-brand-500 text-white text-lg
-              hover:bg-brand-600 align-bottom outline-secondary-500 outline-2"
-            >
-              Découvrir nos services
+        <ul class="gap-4
+           text-darkBrand-500/70 
+           text-xl hidden sm:flex">
+          <li><a href="/index.html">Accueil</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/appropos.html">A propos</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <ul class="flex gap-4">
+          <li>
+            <a href="https://wa.me/237693719877" target="_blank" class="flex gap-2 items-center px-2 py-1
+                bg-green-500 text-white text-xl">
+              <img src="/whatsapp.svg" alt="WhatsApp" class="w-5" />
+              WhatsApp
             </a>
-          </div>
-           <div>
-            <img 
-              src="/hero.jpg" 
-              alt="Salon de beauté Empire by K'role" 
-              class="w-au h-90 object-cover"
-            />
-           </div>
+
+          </li>
+
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="max-container mt-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="flex flex-col items-start">
+          <h1 class="text-3xl md:text-5xl font-bold text-secondary-900">
+            Bienvenue chez <span class="text-brand-500 uppercase font-extrabold">Empire by K'role</span>
+          </h1>
+          <p class="text-lg text-gray-500 mt-2">
+            Découvrez un univers où coiffure, maquillage, soins corporels et spa s'allient
+            pour vous offrir une expérience unique. Laissez-nous prendre soin de vous.
+          </p>
+          <a href="/services.html" class="mt-4 px-4 py-2 bg-brand-500 text-white text-lg
+              hover:bg-brand-600 align-bottom outline-secondary-500 outline-2">
+            Découvrir nos services
+          </a>
+        </div>
+        <div>
+          <img src="/hero.jpg" alt="Salon de beauté Empire by K'role" class="w-au h-90 object-cover" />
         </div>
       </div>
-      <div class="bg-brand-200 mt-2">
-          <div
-            class="max-container flex flex-col h-full"
-          >
-            <h2 class="text-3xl md:text-5xl font-bold
+    </div>
+    <div class="bg-brand-200 mt-2 pb-4">
+      <div class="max-container flex flex-col h-full">
+        <h2 class="text-3xl md:text-5xl font-bold
              text-secondary-500 mt-10">A propos de nous</h2>
 
-             <div class="mt-10 flex gap-4 md:gap-6
+        <div class="mt-10 flex gap-4 md:gap-6
               flex-col md:flex-row">
-              <img 
-                src="/acceuil.jpg" 
-                alt="Salon de beauté Empire by K'role" 
-                class="w-fit h-96 object-contain outline-2 outline-secondary-900"
-              />
-              <div>
-                <p class="text-gray-600 
+          <img src="/acceuil.jpg" alt="Salon de beauté Empire by K'role"
+            class="w-fit h-96 object-contain outline-2 outline-secondary-900" />
+          <div>
+            <p class="text-gray-600 
                 leading-relaxed text-lg
                  max-w-2xl text-justify">
-                  Chez <strong class="text-brand-600">EMPIRE BY K'ROLE</strong>, nous conjuguons <strong>expertise</strong> et <strong>écoute</strong> 
-                  pour des soins de beauté et bien-être <strong>accessibles à tous</strong>. <strong>Femmes et hommes</strong> bénéficient de prestations sur mesure : 
-                  coupe élégante, maquillage, soins corporels ou préparation mariage, le tout avec des <strong>produits haut de gamme</strong> dans un cadre apaisant. 
-                  Notre équipe passionnée s’engage à sublimer votre singularité, des soins quotidiens aux <strong>forfaits événements</strong> clé en main. 
-                  Ici, chaque rendez-vous est une parenthèse où <em>vous repartez radieux</em>.
-                </p>
-              </div>
-             </div>
+              Chez <strong class="text-brand-600">EMPIRE BY K'ROLE</strong>, nous conjuguons <strong>expertise</strong>
+              et <strong>écoute</strong>
+              pour des soins de beauté et bien-être <strong>accessibles à tous</strong>. <strong>Femmes et
+                hommes</strong> bénéficient de prestations sur mesure :
+              coupe élégante, maquillage, soins corporels ou préparation mariage, le tout avec des <strong>produits haut
+                de gamme</strong> dans un cadre apaisant.
+              Notre équipe passionnée s’engage à sublimer votre singularité, des soins quotidiens aux <strong>forfaits
+                événements</strong> clé en main.
+              Ici, chaque rendez-vous est une parenthèse où <em>vous repartez radieux</em>.
+            </p>
           </div>
+        </div>
       </div>
-    </main>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    </div>
+    <div class="w-full inline-flex 
+          flex-nowrap overflow-hidden 
+          mt-0 bg-brand-200 pb-2
+          [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+      <ul
+        class="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll">
+        <li>
+          <img src="/locaux/coifure_femme.jpg" alt="Coiffure Femme" class="w-auto h-80 object-contain" />
+        </li>
+        <li>
+          <img src="/locaux/coifure_homme.jpg" alt="Coiffure Homme" class="w-auto h-80 object-contain" />
+        </li>
+        <li>
+          <img src="/locaux/jacouzi_2.jpg" alt="Jacouzi" class="w-auto h-80 object-contain" />
+        </li>
+        <li>
+          <img src="/locaux/salle_de_soins.jpg" alt="Salle de Soins" class="w-auto h-80 object-contain" />
+        </li>
+        <li>
+          <img src="/locaux/jacouzi.jpg" alt="Jacouzi" class="h-80 w-auto object-contain" />
+        </li>
+        <li>
+          <img src="/locaux/onglerie.jpg" alt="onglerie" class="h-80 w-auto object-contain" />
+        </li>
+
+      </ul>
+      <ul
+        class="flex items-center justify-center md:justify-start [&_li]:mx-4 [&_img]:max-w-none animate-infinite-scroll">
+        <li>
+          <img src="/locaux/coifure_femme.jpg" alt="Coiffure Femme" class="w-auto h-80 object-contain" />
+        </li>
+        <li>
+          <img src="/locaux/coifure_homme.jpg" alt="Coiffure Homme" class="w-auto h-80 object-contain" />
+        </li>
+        <li>
+          <img src="/locaux/jacouzi_2.jpg" alt="Jacouzi" class="w-auto h-80 object-contain" />
+        </li>
+        <li>
+          <img src="/locaux/salle_de_soins.jpg" alt="Salle de Soins" class="w-auto h-80 object-contain" />
+        </li>
+        <li>
+          <img src="/locaux/jacouzi.jpg" alt="Jacouzi" class="h-80 w-auto object-contain" />
+        </li>
+        <li>
+          <img src="/locaux/onglerie.jpg" alt="onglerie" class="h-80 w-auto object-contain" />
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="bg-secondary-900 py-6">
+    <div class="max-container flex flex-col gap-8 md:flex-row justify-between items-center md:items-end">
+      <div class="flex flex-col items-center md:items-start">
+        <img src="/logo.png" alt="Logo Empire by K'role" class="w-32 h-32 object-contain" />
+        <p class="text-white text-center md:text-left mt-4">
+          <strong>EMPIRE BY K'ROLE</strong> <br>
+          Carrefour porte Mayo, Maroua, Cameroun
+        </p>
+      </div>
+      <div>
+        <h2 class="text-whiteBrand-500 text-2xl">Services</h2>
+        <ul class="flex flex-col gap-2 text-whiteBrand-500">
+          <li><a href="/services.html#coiffure">Coiffure</a></li>
+          <li><a href="/services.html#onglerie">Onglerie</a></li>
+          <li><a href="/services.html#jacouzi">Jacouzi</a></li>
+          <li><a href="/services.html#maquillage">Maquillage</a></li>
+          <li><a href="/services.html#soins">Soins corporels</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-whiteBrand-500 text-2xl">Contact</h2>
+        <ul class="flex flex-col gap-2 text-whiteBrand-500">
+          <li><a href="tel:+237693719877">+237 6 93 71 98 77</a></li>
+        </ul>
+      </div>
+      <div class="flex gap-4">
+        <a href="https://www.facebook.com/empirebykrole" target="_blank">
+          <img src="/facebook.svg" alt="Facebook" class="w-5 fill-green-500" /></a>
+        <a href="https://www.tiktok.com/@empirebykrole" target="_blank"><img src="/tiktok.svg" alt="Tiktok"
+            class="w-5" /></a>
+      </div>
+    </div>
+    <div class="max-container border-t border-gray-50/15 mt-4">
+      <p class="text-white text-center mt-4">
+        &copy; 2023 Empire by K'role. Tous droits réservés.
+      </p>
+    </div>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
